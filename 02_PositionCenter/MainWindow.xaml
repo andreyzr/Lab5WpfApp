@@ -1,0 +1,12 @@
+﻿<Window x:Class="_02_PositionCenter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_02_PositionCenter"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="230" Width="320" Closed="Window_Closing">
+    <Grid>
+        <Image Source="Data/1.jpg"/>
+    </Grid>
+</Window>
