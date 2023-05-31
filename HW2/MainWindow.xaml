@@ -7,6 +7,37 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition  Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Menu Margin="5" Padding="5">
+            <MenuItem Header="_Файл">
+                <MenuItem Header="_Открыть" Click="MenuItem_Click"/>
+                <MenuItem Header="_Сохранить" Click="MenuItem_Click_1"/>
+                <Separator/>
+                <MenuItem Header="_Выход" Click="MenuItem_Click_2"/>
+            </MenuItem>
+            <MenuItem Header="_Правка"></MenuItem>
+            <MenuItem Header="_Справка"></MenuItem>
+        </Menu>
+        <InkCanvas x:Name="Canvas" Grid.Row="2"  >
+
+        </InkCanvas>
+        <ToolBarTray Grid.Row="1">
+            <ToolBar >
+                <ComboBox Margin="5" Padding="5" SelectedIndex="0" SelectionChanged="ComboBox_SelectionChanged">
+                    <TextBlock Text="Нормальная"/>
+                    <TextBlock Text="Тонкая"/>
+                    <TextBlock Text="Жирная"/>
+                </ComboBox>
+            </ToolBar>
+            <ToolBar>
+                <ToggleButton Margin="5"  Width="30" Height="30" Background="Red" Click="Button_Click"/>
+                <ToggleButton Margin="5"  Width="30" Height="30" Background="Green" Click="ToggleButton_Click" />
+                <ToggleButton Margin="5" Width="30" Height="30" Background="Blue" Checked="ToggleButton_Checked" />
+            </ToolBar>
+        </ToolBarTray>
     </Grid>
 </Window>
